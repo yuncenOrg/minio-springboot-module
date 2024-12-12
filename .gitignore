@@ -16,6 +16,7 @@ target/
 ### IntelliJ IDEA ###
 .idea
 *.iws
+*.DS_Store
 *.iml
 *.ipr
 
@@ -32,3 +33,7 @@ build/
 ### VS Code ###
 .vscode/
 /vue-minio/package-lock.json
+/vue-minio/node_modules
+doc/.DS_Store
+springboot-minio/src/.DS_Store
+vue-minio/src/.DS_Store
