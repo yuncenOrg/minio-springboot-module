@@ -9,12 +9,12 @@
             <result property="uid" column="uid" jdbcType="INTEGER"/>
             <result property="bucket" column="bucket" jdbcType="VARCHAR"/>
             <result property="object" column="object" jdbcType="VARCHAR"/>
-            <result property="create·Time" column="create·_time" jdbcType="TIMESTAMP"/>
+            <result property="createTime" column="create_time" jdbcType="TIMESTAMP"/>
             <result property="updateTime" column="update_time" jdbcType="TIMESTAMP"/>
     </resultMap>
 
     <sql id="Base_Column_List">
         id,uid,bucket,
-        object,create·_time,update_time
+        object,create_time,update_time
     </sql>
 </mapper>

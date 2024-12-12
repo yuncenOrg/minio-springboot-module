@@ -13,7 +13,7 @@ public class Config {
         //链式编程，构建MinioClient对象
         return MinioClient.builder()
                 .endpoint("http://127.0.0.1:9000")
-                .credentials("I7ZLyrAR64D3ZfzTY2uo", "1OYsnV8OoDZb4kVAM24W9olQHNN1nTkv9f8YmpSf\n")
+                .credentials("I7ZLyrAR64D3ZfzTY2uo", "1OYsnV8OoDZb4kVAM24W9olQHNN1nTkv9f8YmpSf")
                 .build();
     }
 }

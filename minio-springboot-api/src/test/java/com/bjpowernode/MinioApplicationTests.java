@@ -39,7 +39,7 @@ class MinioApplicationTests {
 
     @Test
     void test02() throws Exception {
-        String bucketName = "myfile2";
+        String bucketName = "myfile";
         boolean isBucketExists = minioClient.bucketExists(BucketExistsArgs.builder().bucket(bucketName).build());
         if (!isBucketExists) {
             minioClient.makeBucket(MakeBucketArgs.builder().bucket(bucketName).build());
@@ -72,10 +72,10 @@ class MinioApplicationTests {
 
     @Test
     void test05() throws Exception {
-        File file = new File("D:\\MinIO\\MinioClient.jpg");
+        File file = new File("/Users/xiang/Desktop/关于SFTP数据推送加密方案 原型图模版.xlsx");
         ObjectWriteResponse objectWriteResponse = minioClient.putObject(PutObjectArgs.builder()
                 .bucket("myfile")
-                .object("test.jpg")
+                .object("/Desktop/关于SFTP数据推送加密方案 原型图模版.xlsx")
                 .stream(new FileInputStream(file), file.length(), -1)
                 .build()
         );
@@ -83,8 +83,8 @@ class MinioApplicationTests {
 
         ObjectWriteResponse objectWriteResponse2 = minioClient.uploadObject(UploadObjectArgs.builder()
                 .bucket("myfile")
-                .object("test2.jpg")
-                .filename("D:\\MinIO\\MinioClient.jpg")
+                .object("/Desktop/关于SFTP数据推送加密方案 流程图.excalidraw")
+                .filename("/Users/xiang/Desktop/关于SFTP数据推送加密方案 流程图.excalidraw")
                 .build()
         );
         System.out.println(objectWriteResponse);

@@ -12,9 +12,4 @@
             <result property="createTime" column="create·_time" jdbcType="TIMESTAMP"/>
             <result property="updateTime" column="update_time" jdbcType="TIMESTAMP"/>
     </resultMap>
-
-    <sql id="Base_Column_List">
-        id,uid,bucket,
-        object,create·_time,update_time
-    </sql>
 </mapper>

@@ -3,9 +3,9 @@ spring:
     name: springboot-minio
 
   datasource:
-    url: jdbc:mysql://192.168.11.128:3306/minio?serverTimezone=GMT%2B8&useUnicode=true&characterEncoding=utf8&useSSL=false&allowPublicKeyRetrieval=true
-    username: root
-    password: 123456
+    url: jdbc:mysql://liuyuncen.com:3388/cloud?serverTimezone=GMT%2B8&useUnicode=true&characterEncoding=utf8&useSSL=false&allowPublicKeyRetrieval=true
+    username: cloud
+    password: cloud
     driver-class-name: com.mysql.cj.jdbc.Driver
 
 
@@ -14,9 +14,9 @@ mybatis-plus:
 
 #自定义配置
 minio:
-  endpoint: http://192.168.11.128:9000
-  accessKey: minioadmin
-  secretKey: minioadmin
+  endpoint: http://127.0.0.1:9000
+  accessKey: I7ZLyrAR64D3ZfzTY2uo
+  secretKey: 1OYsnV8OoDZb4kVAM24W9olQHNN1nTkv9f8YmpSf
   bucket: user-bucket
 
 
